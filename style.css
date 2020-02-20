@@ -1,0 +1,39 @@
+fieldset {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Marck Script', cursive;
+}
+
+#journalEntry {
+    height: auto;
+    width: 92%;
+}
+
+.journalField {
+    font-family: 'Neucha', cursive;
+    font-size: 24px;
+    padding: 1em;
+    text-align: left;
+}
+
+.responsive {
+    height: auto;
+    width: 100%;
+}
+
+#submitButton {
+    background-color: #e31791;
+    color: white;
+    font-family: 'Marck Script', cursive;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+
+

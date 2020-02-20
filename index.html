@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Marck+Script|Neucha&display=swap" rel="stylesheet">
+    <title>Daily Journal</title>
+</head>
+
+<body>
+    <div class="background-image">
+        <img class="responsive" src="https://dz01iyojmxk8t.cloudfront.net/wp-content/uploads/2012/08/06232722/Capture1.jpg">
+    </div>
+    <form id="diary" action="">
+        
+        <fieldset class="journalField">
+            <label for="journalDate">Today is</label>
+            <input type="date" name="journalDate" id="journalDate">
+        </fieldset>
+
+        <fieldset class="journalField">
+            <label class="textAreaLabel" for="journalEntry">We covered these concepts in class: </label>
+            <textarea name="journalEntry" id="journalEntry" cols="30" rows="10"></textarea>
+        </fieldset>
+
+        <fieldset class="journalField">  
+            <label for="feelingMeter">I am feeling: </label>
+                    <select id="feelingMeter">
+                        <option value="exhilarated">Exhilarated</option>
+                        <option value="accomplished">Accomplished</option>
+                        <option value="confident">Confident</option>
+                        <option value="optimistic">Optimistic</option>
+                        <option value="apathetic">Apathetic</option>
+                        <option value="sleepy">Sleepy</option>
+                        <option value="confused">Confused</option>
+                        <option value="deflated">Deflated</option>
+                        <option value="frustrated">Frustrated</option>
+                        <option value="deadInside">Dead Inside</option>
+                        <option value="crabWalking">Like crab walking into oncoming traffic</option>
+                        <option value="abyssOfDespair">Balls deep in the Abyss of Despair</option> 
+        </fieldset>
+    </form>
+
+    <input id="submitButton" type="submit" value="Love, Crystal" onclick="submitEntry()">
+    <script src="main.js"></script>
+</body>
+
+</html>
