@@ -1,38 +1,30 @@
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.capturedEntry {
+    border: 1px solid gray;
+}
+
 fieldset {
-    border: none;
+    border: 1px solid gray;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    height: auto;
-    width: 100%;
+    width: 50%;
 }
 
-h1 {
-    font-family: 'Marck Script', cursive;
-}
-
-#journalEntry {
-    height: auto;
-    width: 90%;
-}
-
-.journalField {
-    font-family: 'Neucha', cursive;
-    font-size: 24px;
-    padding: 1em;
-    text-align: left;
-}
-
-.responsive {
-    height: auto;
-    width: 100%;
+.journalCaptures {
+    margin-top: 50px;
+    width: 50%;
 }
 
 #submitButton {
-    background-color: #e31791;
+    background-color: darkgray;
     color: white;
-    font-family: 'Marck Script', cursive;
-    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    padding: 20px;
     margin-top: 30px;
 }
 
