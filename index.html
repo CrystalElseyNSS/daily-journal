@@ -3,47 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Marck+Script|Neucha&display=swap" rel="stylesheet">
-    <title>Daily Journal</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>NSS Daily Journal</title>
 </head>
 
 <body>
-    <div class="background-image">
-        <img class="responsive" src="https://dz01iyojmxk8t.cloudfront.net/wp-content/uploads/2012/08/06232722/Capture1.jpg">
-    </div>
-    <form id="diary" action="">
+    
+    <main class="container">
+
+        <header>
+            <h1>Daily NSS Journal</h1>
+            <h2>by: Crystal Elsey</h2>
+        </header>
+
+        <form class="journalEntry" action="">
+
+            <fieldset class="entry__date">
+                 <label for="entry__date">Today's Date: </label>
+                 <input type="date" name="entry__date" />
+             </fieldset>
+    
+            <fieldset class="entry__concept">
+                <label for="entry__concept">Main Concept(s) Covered: </label>
+                <textarea name="entry__concept" cols="30" rows="10"></textarea>                
+            </fieldset>
+    
+            <fieldset class="entry__project">
+                <label for="entry__project">Projects Worked On: </label>
+                <textarea name="entry__project" cols="30" rows="10"></textarea>                
+            </fieldset>
+    
+            <fieldset class="entry__mood">  
+                <label for="entry__mood">I am feeling: </label>
+                <select name="entry__mood" id="select--feeling">
+                    <option value="exhilarated">Exhilarated</option>
+                    <option value="accomplished">Accomplished</option>
+                    <option value="confident">Confident</option>
+                    <option value="optimistic">Optimistic</option>
+                    <option value="optimistic">Optimistic</option>
+                    <option value="satisfied">Satisfied</option>
+                    <option value="fine">Fine</option>
+                    <option value="sleepy">Sleepy</option>
+                    <option value="confused">Confused</option>
+                    <option value="deflated">Deflated</option>
+                    <option value="frustrated">Frustrated</option>
+                    <option value="deadInside">Dead Inside</option>
+                    <option value="crabWalking">Like crab walking into oncoming traffic</option>
+                    <option value="abyssOfDespair">Balls deep in the Abyss of Despair</option> 
+                </select>
+            </fieldset>
+
+            <input type="submit" form="journalEntry" value="Submit" id="submitButton"/>
+
+        </form>
         
-        <fieldset class="journalField">
-            <label for="journalDate">Today is</label>
-            <input type="date" name="journalDate" id="journalDate">
-        </fieldset>
+        <section class="journalCaptures">
+            <h2>Past Journal Entries</h2>
+        </section>
+    
+    </main>   
 
-        <fieldset class="journalField">
-            <label class="textAreaLabel" for="journalConcept">We covered these concepts in class: </label>
-            <textarea name="journalConcept" id="journalConcept" cols="30" rows="10"></textarea>
-        </fieldset>
-
-        <fieldset class="journalField">  
-            <label for="journalFeeling">I am feeling: </label>
-                    <select id="journalFeeling">
-                        <option value="exhilarated">Exhilarated</option>
-                        <option value="accomplished">Accomplished</option>
-                        <option value="confident">Confident</option>
-                        <option value="optimistic">Optimistic</option>
-                        <option value="apathetic">Apathetic</option>
-                        <option value="sleepy">Sleepy</option>
-                        <option value="confused">Confused</option>
-                        <option value="deflated">Deflated</option>
-                        <option value="frustrated">Frustrated</option>
-                        <option value="deadInside">Dead Inside</option>
-                        <option value="crabWalking">Like crab walking into oncoming traffic</option>
-                        <option value="abyssOfDespair">Balls deep in the Abyss of Despair</option> 
-        </fieldset>
-    </form>
-
-    <input id="submitButton" type="submit" value="Love, Crystal" onclick="submitEntry()">
-    <script src="main.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
 </body>
 
 </html>
