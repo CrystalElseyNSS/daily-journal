@@ -11,7 +11,7 @@ fieldset {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 50%;
+    width: 25%;
 }
 
 .journalCaptures {
