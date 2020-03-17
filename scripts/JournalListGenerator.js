@@ -1,5 +1,5 @@
-import { JournalEntryHTML } from "./JournalEntryHTML.js";
-import { copyOfJournalEntryArray } from "./journalDataArray.js";
+import { JournalEntryHTML } from "./JournalEntryHTML.js"
+import { copyOfJournalEntryArray } from "./journalDataProvider.js"
 
 const contentTarget = document.querySelector(".journalCaptures");
 
