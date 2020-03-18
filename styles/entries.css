@@ -1,0 +1,26 @@
+#entriesHeader {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 45px;
+    margin: 30px auto;
+    text-align: center;
+    width: 80%;
+}
+
+.journalCaptures {
+    background-image: url("https://i.pinimg.com/736x/69/c5/35/69c535f0abeac40621f0332cf8025bf1.jpg");
+    border: 5px solid lightseagreen;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    width: 80%;
+}
+
+.capturedEntry {
+    background-color: lightseagreen;
+    border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+    height: auto;
+    margin: 10px auto;
+    padding: 50px;
+    width: 30%;
+}
