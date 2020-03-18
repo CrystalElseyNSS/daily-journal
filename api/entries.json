@@ -1,25 +1,53 @@
-{ 
-    "journalEntryArray" : [
-        {
-            "id": 1,
-            "date": "02/07/2020",
-            "concept": "GitHut collaboration",
-            "project": "Worked with Globtrotters team to effectively create and merge respective branches into master.",
-            "mood": "Okay"
-        },
-        {
-            "id": 2,
-            "date": "02/08/2020",
-            "concept": "HTML automation",
-            "project": "We started using JavaScript to automate HTML from an array of objects.",
-            "mood": "Confused"
-        },
-        {
-            "id": 3,
-            "date": "02/09/2020",
-            "concept": "HTML automation",
-            "project": "We practiced more HTML automation using JavaScript.",
-            "mood": "Accomplished"
-        }
-    ]
+{
+  "journalEntryArray": [
+    {
+      "id": 1,
+      "date": "02/21/2020",
+      "topic": "Functions",
+      "thoughts": "We did JavaScript functions and learned more about gits and github! We created dialogs for Martin's Aquarium, and I created this function to email my journal entries to myself. I am tired, and happy that it's the weekend, but overall, feeling pretty good!",
+      "mood": "Accomplished"
+    },
+    {
+      "id": 2,
+      "date": "02/25/2020",
+      "topic": "GitHut collaboration",
+      "thoughts": "We watched C37's demos. I liked the pet chore app and the fitted app. We finished our team travel site, and got more used to Git Hub. I understand more how committing different phases of work would help in a team environment. Overall, I think the team worked together well, once we found a cohesive rhythm and stride. Taking the time to learn from each other was really beneficial.",
+      "mood": "Optimistic!"
+    },
+    {
+      "id": 3,
+      "date": "02/26/2020",
+      "topic": "Teamwork",
+      "thoughts": "Group work can be hard when you're all at different levels.",
+      "mood": "Frustrated"
+    },
+    {
+      "id": 4,
+      "date": "02/28/2020",
+      "topic": "HTML Automation",
+      "thoughts": "We replicated our html automation for locations. I edited the CSS for the aquarium page. I committed several gits and feel like I'm getting the hang of GitHub!Happy it's the weekend! Ready for a break!",
+      "mood": "Sleepy"
+    },
+    {
+      "id": 5,
+      "date": "03/07/2020",
+      "topic": "GitHut collaboration",
+      "thoughts": "Worked with Globtrotters team to effectively create and merge respective branches into master.",
+      "mood": "Okay"
+    },
+    {
+      "id": 6,
+      "date": "03/08/2020",
+      "topic": "HTML automation",
+      "thoughts": "We started using JavaScript to automate HTML from an array of objects.",
+      "mood": "Confused"
+    },
+    {
+      "id": 7,
+      "date": "03/09/2020",
+      "topic": "HTML automation",
+      "thoughts": "We practiced more HTML automation using JavaScript.",
+      "mood": "Accomplished"
+    }
+  ]
 }

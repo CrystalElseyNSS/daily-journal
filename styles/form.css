@@ -1,0 +1,42 @@
+#journalForm {
+    background-color: whitesmoke;
+    border: 5px solid lightseagreen;
+    margin: auto;
+    width: 80%;
+}
+
+.form__field {
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    margin: 10px auto;
+    width: 80%;
+}
+
+#formHeader {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 45px;
+    margin: 30px auto;
+    text-align: center;
+    width: 80%;
+}
+
+#input--thoughts {
+    height: 100px;
+}
+
+.textArea {
+    margin: 10px auto;
+    width: 95%;
+}
+
+#submitEntry {
+    background-color: darkgray;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-left: 35%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 5px;
+}
