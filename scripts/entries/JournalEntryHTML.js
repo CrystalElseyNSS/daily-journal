@@ -1,10 +1,10 @@
-export const JournalEntryHTML = (journalEntryArray) => {
+export const JournalEntryHTML = (entries) => {
     return `
-        <section class="capturedEntry" id="journalEntry--${journalEntryArray.id}">
-            <p>Date: ${journalEntryArray.date}</p>
-            <p>Topic(s) Covered: ${journalEntryArray.topic}</p>
-            <p>Thoughts: ${journalEntryArray.thoughts}</p>
-            <p>I am feeling: ${journalEntryArray.mood}</p>
+        <section class="savedEntry" id="journalEntry--${entries.id}">
+            <p>Date: ${entries.date}</p>
+            <p>Topic(s) Covered: ${entries.topic}</p>
+            <p>Thoughts: ${entries.thoughts}</p>
+            <p>I am feeling: ${entries.mood}</p>
         </section>   
         `
 }

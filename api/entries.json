@@ -1,5 +1,5 @@
 {
-  "journalEntryArray": [
+  "entries": [
     {
       "id": 1,
       "date": "02/21/2020",
@@ -48,6 +48,13 @@
       "topic": "HTML automation",
       "thoughts": "We practiced more HTML automation using JavaScript.",
       "mood": "Accomplished"
+    },
+    {
+      "date": "2020-03-19",
+      "topic": "Custom Events",
+      "thoughts": "Added dialog boxes to criminal list, with a custom event to display known associates when clicked. Had to import my KnownAssociatesDialog.js into my main, which I don't remember Steve doing? Not sure why. Finding custom events very confusing. Got it working with Mo's help. Also, cleaned up my journal code after a code review with Mo, and subsequently broke it. Learned that when you call a function and add a .then to it, the fetch call you're using inside said function needs to be \"return\"ed. Mo is my hero.",
+      "mood": "Confused",
+      "id": 8
     }
   ]
 }
