@@ -1,30 +1,29 @@
-import { copyOfJournalEntryArray } from "../entries/journalDataProvider.js"
-import { saveEntry } from "./EntryProvider.js"
+import { saveEntry } from "../entries/journalDataProvider.js"
 
 const contentTarget = document.querySelector("#journalForm")
 
 export const createEntry = () => {
-    const renderJournal = () => {
+    const renderJournalForm = () => {
         return contentTarget.innerHTML = `
             <h2 id="formHeader">Submit New Entry</h2>
             <fieldset class="form__field">
                 <p><label for="form__date">Today's Date: </label></p>
-                <input type="date" name="form__date"/>
+                <input type="date" name="form__date" id="form__date"/>
             </fieldset>
             
             <fieldset class="form__field">
                 <p><label for="form__topic">Topic(s) Covered: </label></p>
-                <textarea name="form__topic" class="textArea"></textarea>                
+                <textarea name="form__topic" id="form__topic" class="textArea"></textarea>                
             </fieldset>
             
             <fieldset class="form__field">
                 <p><label for="form__thoughts">Thoughts: </label></p>
-                <textarea name="form__thoughts" id="input--thoughts" class="textArea"></textarea>                
+                <textarea name="form__thoughts" id="form__thoughts" class="textArea"></textarea>                
             </fieldset>
             
             <fieldset class="form__field">  
                 <p><label for="form__mood">I am feeling: </label></p>
-                <select name="form__mood">
+                <select name="form__mood" id="select--mood">
                     <option>Exhilarated</option>
                     <option>Accomplished</option>
                     <option>Confident</option>
@@ -45,7 +44,7 @@ export const createEntry = () => {
             <button type="submit" form="journalForm" id="submitEntry">Save Journal Entry</button>
         `
     } 
-    renderJournal()
+    renderJournalForm()
 }
 
 contentTarget.addEventListener("click", clickEvent => {
@@ -54,14 +53,12 @@ contentTarget.addEventListener("click", clickEvent => {
         const topicEntered = document.querySelector("#form__topic").value
         const thoughtsEntered = document.querySelector("#form__thoughts").value
         const moodSelected = document.querySelector("#select--mood").value
-        const crySelected = document.querySelector("#select--cry").value
 
         const newEntry = {
             date: dateEntered,
             topic: topicEntered,
             thoughts: thoughtsEntered,
             mood: moodSelected,
-            cried: crySelected
         }
         saveEntry(newEntry)
     }

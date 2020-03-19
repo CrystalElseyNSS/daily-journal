@@ -6,7 +6,7 @@
     width: 80%;
 }
 
-.journalCaptures {
+.journalEntries {
     background-image: url("https://i.pinimg.com/736x/69/c5/35/69c535f0abeac40621f0332cf8025bf1.jpg");
     border: 5px solid lightseagreen;
     display: flex;
@@ -15,7 +15,7 @@
     width: 80%;
 }
 
-.capturedEntry {
+.savedEntry {
     background-color: lightseagreen;
     border-radius: 20px;
     font-family: 'Raleway', sans-serif;
